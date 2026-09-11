@@ -1,20 +1,33 @@
+import {useState} from "react";
+
 function Navbar() {
+  const [title, setTitle] = useState("Kelas Frond-End A");
+
   return (
     <nav className="sticky top-0 z-50 border-b border-zinc-200/70 bg-[#fafafa]/90 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
 
         {/* Logo */}
         <a href="#" className="text-xl font-bold tracking-tight">
-          reva<span className="text-violet-600">.</span>
+          {title}
         </a>
 
         {/* Navigation */}
         <div className="hidden items-center gap-8 text-sm font-medium md:flex">
-          <a href="#" className="text-violet-600">
+          <a onClick={()=>{
+            if (title === "Bukan Home") {
+              setTitle("Home");
+            } else {
+              setTitle("Bukan Home")
+            }
+          }} 
+          href="#" 
+          className="text-violet-600">
             Home
           </a>
 
           <a
+            onClick={()=>{setTitle("Articles")}}
             href="#articles"
             className="text-zinc-600 transition hover:text-zinc-950"
           >
@@ -22,6 +35,7 @@ function Navbar() {
           </a>
 
           <a
+          onClick={()=>{setTitle("About")}}
             href="#about"
             className="text-zinc-600 transition hover:text-zinc-950"
           >

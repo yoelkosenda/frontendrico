@@ -62,12 +62,12 @@ function FeaturedPost() {
 
               <div className="flex items-center gap-3">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-zinc-900 text-sm font-bold text-white">
-                  R
+                  Y
                 </div>
 
                 <div>
                   <p className="text-sm font-semibold">
-                    Reva
+                    Yoel
                   </p>
 
                   <p className="text-xs text-zinc-500">

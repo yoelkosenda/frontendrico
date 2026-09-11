@@ -8,7 +8,7 @@ function Footer() {
 
           <div>
             <h2 className="text-2xl font-bold">
-              reva<span className="text-violet-400">.</span>
+              Yoel<span className="text-violet-400">.</span>
             </h2>
 
             <p className="mt-4 max-w-sm text-sm leading-6 text-zinc-400">
@@ -65,7 +65,7 @@ function Footer() {
         </div>
 
         <div className="mt-12 border-t border-zinc-800 pt-6 text-xs text-zinc-500">
-          © 2026 Reva. Built with React & Tailwind CSS.
+          © 2026 Yoel. Built with React & Tailwind CSS.
         </div>
 
       </div>
